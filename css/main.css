@@ -14,6 +14,7 @@
 	--color-grey-medium: #e1e1e1;
 	--color-grey-light: #f1f1f1;
 	--color-blue: #57a5a9;
+	--color-acai: #5F3C4F;
 	
 	/* Font Family */
 	--font-family: "Barlow", sans-serif;
@@ -84,7 +85,7 @@ h2 {
 
 hr {
 	width: 100%;
-	margin: 5rem auto;
+	margin: 7rem auto;
 	border: 0.1rem solid var(--color-grey-medium);
 }
 
@@ -106,17 +107,44 @@ strong {
 	font-weight: var(--font-semi-bold);
 }
 
-/* Main - Section
+em {
+	font-style: normal;
+	color: var(--color-blue);
+}
+
+/* Main - Section - Reusable Links
 ================================================== */
 main {
 	width: 100%;
-	ackground-color: coral;
 }
 
 section {
 	max-width: 120rem;
 	height: auto;
-	ackground-color: indianred;
+	padding-bottom: 5rem;
+}
+
+.link__primary {
+	color: var(--color-grey-dark);
+	text-decoration: underline;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 1rem;	
+	transition: 0.3s;
+}
+
+.link__primary:hover {
+	color: var(--color-blue);
+}
+
+.link__secondary {
+	color: var(--color-blue);
+	text-decoration: underline;
+	text-underline-offset: 0.6rem;
+	transition: 0.3s;
+}
+
+.link__secondary:hover {
+	color: var(--color-grey-dark);
 }
 
 /* Header - Logo - Nav 
@@ -217,31 +245,27 @@ nav li a:hover, .active {
 	padding: 1rem 0;
 }
 
-.projects__link {
-	color: var(--color-grey-dark);
-	text-decoration: underline;
-	text-decoration-thickness: 0.2rem;
-	text-underline-offset: 1rem;	
-	transition: 0.3s;
-}
-
-.projects__link:hover {
-	color: var(--color-blue);
-}
-
 .more {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5rem 0;
+	padding-top: 3rem;
+}
+
+/* Section Things I <3
+================================================== */
+.whatilove p {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding-inline: 2rem;
 }
 
 /* Footer
 ================================================== */
 footer {
 	width: 100%;
-	text-align: center;
 	padding: 1.5rem;
+	text-align: center;
 	background-color: var(--color-grey-dark);
 	border-top: 0.3rem solid var(--color-blue);
 }
