@@ -61,6 +61,9 @@ body {
 	line-height: var(--line-height-md);
 	color: var(--color-grey-dark);
 	background-color: var(--color-grey-light);
+	min-height: 100vh;
+	overflow: auto;
+	border: 1rem solid var(--color-grey-dark);
 }
 
 h1, h2, h3, p, ul {
@@ -68,17 +71,17 @@ h1, h2, h3, p, ul {
 }
 
 h1 {
-	font-size: var(--font-size-xxl);
+	font-size: var(--font-size-xl);
 	font-weight: var(--font-semi-bold);
 	text-align: center;
 	text-decoration: underline;
 	text-decoration-color: var(--color-blue);
 	text-underline-offset: 1rem;
-	margin: 3rem 0;
+	padding-bottom: 4rem;
 }
 
 h2 {
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-md);
 	font-weight: var(--font-semi-bold);
 	padding: 0.5rem 0;
 }
@@ -93,7 +96,7 @@ h3 {
 
 hr {
 	width: 100%;
-	margin: 7rem auto;
+	margin: 5rem auto;
 	border: 0.1rem solid var(--color-grey-medium);
 }
 
@@ -120,18 +123,21 @@ em {
 	color: var(--color-blue);
 }
 
-/* Main - Section - Reusables
+/* Section - Reusables
 ================================================== */
-main {
-	width: 100%;
-}
-
 section {
 	max-width: 120rem;
-	height: auto;
-	padding-bottom: 5rem;
+	margin: 0 auto;
+	padding: 5rem 0;
 }
 
+.text__center {
+	max-width: 65rem;
+	margin: 0 auto;
+	padding-inline: 1rem;
+}
+
+/* Link Styles */
 .link__primary {
 	color: var(--color-grey-dark);
 	text-decoration: underline;
@@ -155,88 +161,83 @@ section {
 	color: var(--color-grey-dark);
 }
 
-/* Header - Logo - Nav 
+/* Header - Nav
 ================================================== */
 header {
-	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
-.logo {
+.brand {
 	display: flex;
 	justify-content: space-between;
-	align-content: center;
 	align-items: center;
+	width: 100%;
 	font-size: var(--font-size-lg);
-	font-weight: var(--font-regular);
 }
 
-.logo li {
+.brand li {
 	display: inline-block;
-	margin-left: 2rem;
+	padding-left: 1rem;
 }
 
-.logo a {
+.brand a {
 	color: var(--color-grey-dark);
-	transition: 0.3s;
+	text-decoration: underline;
+	text-underline-offset: 0.6rem;
+	transition: 0.3s ease-in-out;
 }
 
-.logo a:hover {
+.brand a:hover {
 	color: var(--color-blue);
-}
-
-nav {
-	display: flex;
-	justify-content: flex-start;
-	font-weight: var(--font-thin);
 }
 
 nav li {
 	display: inline-block;
-	margin-right: 2rem;
+	padding: 0.5rem 2rem 0 0;
 }
 
 nav li a {
 	color: var(--color-grey-dark);
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 1rem;
+	transition: 0.3s ease-in-out;
 }
 
 nav li a:hover, .active {
-	color: var(--color-blue);
 	text-decoration: underline;
+	text-decoration-color: var(--color-blue);
 	text-underline-offset: 1rem;
 }
 
 /* Section About
 ================================================== */
-.about {
-	margin: 0 auto;
-	padding-top: 5rem;
+.profile-photo {
+	padding-inline: 1rem;
+	text-align: center;
 }
 
-.about__text {
-	max-width: 80rem;
-	margin: 0 auto;
-	padding: 0 2rem;
+.profile-photo img {
+	border-radius: 50%;
 }
 
-.about span {
+.about__text span {
 	font-size: var(--font-size-sm);
 }
 
-.profile-photo img{
-	display: block;
-	margin: 0 auto;
-	padding: 2rem;
-	border-radius: 50rem;
-}
-
-/* Section Projects Latest
+/* Section Projects
 ================================================== */
-.projects__latest {
+.projects {
 	display: grid;
-	gap: 5rem;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	row-gap: 5rem;
+	column-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 	max-width: 120rem;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 
 .projects__card {
@@ -261,39 +262,11 @@ nav li a:hover, .active {
 	padding-top: 3rem;
 }
 
-/* Section What I <3
-================================================== */
-.whatilove p {
-	max-width: 80rem;
-	margin: 0 auto;
-	padding-inline: 2rem;
-}
-
-/* Section Photography
-================================================== */
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 2rem;
-}
-
-.column {
-	flex: 25%;
-	max-width: 25%;
-	padding: 0 0.4rem;
-}
-
-.column img {
-	width: 100%;
-	margin-top: 1rem;
-	vertical-align: middle;
-}
-
 /* Footer
 ================================================== */
 footer {
 	width: 100%;
-	padding: 1.5rem;
+	padding-top: 1rem;
 	text-align: center;
 	background-color: var(--color-grey-dark);
 	border-top: 0.3rem solid var(--color-blue);
@@ -332,11 +305,6 @@ footer i {
 		max-width: 100%;
 	}
 }
-
-
-
-
-
 
 
 
