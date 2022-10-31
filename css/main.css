@@ -57,7 +57,7 @@ html {
 body {
 	font-family: var(--font-family);
 	font-size: var(--font-size-md);
-	font-weight: var(--font-regular);
+	font-weight: var(--font-thin);
 	line-height: var(--line-height-md);
 	color: var(--color-grey-dark);
 	background-color: var(--color-grey-light);
@@ -72,17 +72,17 @@ h1, h2, h3, p, ul {
 
 h1 {
 	font-size: var(--font-size-xl);
-	font-weight: var(--font-semi-bold);
+	font-weight: var(--font-regular);
 	text-align: center;
 	text-decoration: underline;
 	text-decoration-color: var(--color-blue);
 	text-underline-offset: 1rem;
-	padding-bottom: 4rem;
+	padding: 4rem 0;
 }
 
 h2 {
 	font-size: var(--font-size-md);
-	font-weight: var(--font-semi-bold);
+	font-weight: var(--font-regular);
 	padding: 0.5rem 0;
 }
 
@@ -95,7 +95,7 @@ h3 {
 }
 
 hr {
-	width: 100%;
+	max-width: 80rem;
 	margin: 5rem auto;
 	border: 0.1rem solid var(--color-grey-medium);
 }
@@ -115,7 +115,7 @@ img {
 }
 
 strong {
-	font-weight: var(--font-semi-bold);
+	font-weight: var(--font-regular);
 }
 
 em {
@@ -132,9 +132,29 @@ section {
 }
 
 .text__center {
-	max-width: 65rem;
+	max-width: 80rem;
 	margin: 0 auto;
-	padding-inline: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+/* Hashtag style for projects' cards */
+.tagged {
+	font-size: var(--font-size-sm);
+	text-transform: uppercase;
+	margin-right: 0.5rem;
+	padding: 0.3rem 0.4rem;
+	color: var(--color-blue);
+	background-color: var(--color-grey-medium);
+}
+
+/* Full-width images */
+.img__container {
+	display: grid;
+	row-gap: 5rem;
+	column-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+	max-width: 120rem;
+	margin: 0 auto;	
 }
 
 /* Link Styles */
@@ -151,14 +171,16 @@ section {
 }
 
 .link__secondary {
-	color: var(--color-blue);
+	color: var(--color-grey-dark);
 	text-decoration: underline;
-	text-underline-offset: 0.6rem;
-	transition: 0.3s;
+	text-decoration-color: var(--color-grey-dark);
+	text-underline-offset: 0.8rem;
 }
 
 .link__secondary:hover {
-	color: var(--color-grey-dark);
+	text-decoration: underline;
+	text-decoration-color: var(--color-blue);
+	text-underline-offset: 0.8rem;
 }
 
 /* Header - Nav
@@ -222,7 +244,8 @@ nav li a:hover, .active {
 }
 
 .profile-photo img {
-	border-radius: 50%;
+	border-top-left-radius: 10rem;
+	border-bottom-right-radius: 10rem;
 }
 
 .about__text span {
@@ -262,11 +285,33 @@ nav li a:hover, .active {
 	padding-top: 3rem;
 }
 
+/* Projects Flexbox
+================================================== */
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+	gap: 1rem;
+	text-align: center;
+}
+
+.flex-item-fullwidth {
+	flex: 100%;
+}
+
+.flex-item-left {
+	flex: 40%;
+}
+
+.flex-item-right {
+	flex: 40%;
+}
+
 /* Footer
 ================================================== */
 footer {
 	width: 100%;
-	padding-top: 1rem;
+	padding: 3rem 0 2rem;
 	text-align: center;
 	background-color: var(--color-grey-dark);
 	border-top: 0.3rem solid var(--color-blue);
@@ -282,6 +327,7 @@ footer i {
 	color: var(--color-blue);
 }
 
+
 /* Media Queries
 ================================================== */
 @media only screen and (max-width: 800px) {
@@ -296,6 +342,10 @@ footer i {
 	.column {
 		flex: 50%;
 		max-width: 50%;
+	}
+	
+	.flex-item-right, .flex-item-left {
+		flex: 100%;
 	}
 }
 
