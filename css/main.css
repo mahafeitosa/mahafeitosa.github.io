@@ -25,6 +25,7 @@
 	--font-size-lg: 2.5rem;
 	--font-size-xl: 3rem;
 	--font-size-xxl: 3.5rem;
+	--font-size-xxxl: 6rem;
 	
 	/* Font Weight */
 	--font-thin: 100;
@@ -123,6 +124,10 @@ em {
 	color: var(--color-blue);
 }
 
+iframe {
+	border: none;
+}
+
 /* Section - Reusables
 ================================================== */
 section {
@@ -135,6 +140,7 @@ section {
 	max-width: 80rem;
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
+	color: var(--color-grey-dark);
 }
 
 /* Hashtag style for projects' cards */
@@ -143,8 +149,9 @@ section {
 	text-transform: uppercase;
 	margin-right: 0.5rem;
 	padding: 0.3rem 0.4rem;
-	color: var(--color-blue);
-	background-color: var(--color-grey-medium);
+	color: var(--color-grey-light);
+	background-color: var(--color-blue);
+	border-radius: 0.3rem;
 }
 
 /* Full-width images */
@@ -159,9 +166,10 @@ section {
 
 /* Link Styles */
 .link__primary {
+	font-weight: var(--font-regular);
 	color: var(--color-grey-dark);
 	text-decoration: underline;
-	text-decoration-thickness: 0.2rem;
+	text-decoration-color: var(--color-blue);
 	text-underline-offset: 1rem;	
 	transition: 0.3s;
 }
@@ -181,6 +189,33 @@ section {
 	text-decoration: underline;
 	text-decoration-color: var(--color-blue);
 	text-underline-offset: 0.8rem;
+}
+
+/* YouTube Responsive Embed */
+.youtube-video-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.youtube-video-container::after {
+	display: block;
+	content: "";
+	padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* To Top Button */
+.to-top {
+	text-align: center;
+	font-size: var(--font-size-xxxl);
 }
 
 /* Header - Nav
@@ -290,8 +325,10 @@ nav li a:hover, .active {
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 3rem;
 	padding: 1rem;
-	gap: 1rem;
+	row-gap: 1rem;
+	column-gap: 1.5rem;
 	text-align: center;
 }
 
