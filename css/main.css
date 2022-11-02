@@ -138,6 +138,14 @@ section {
 	color: var(--color-grey-dark);
 }
 
+.text__center span {
+	font-size: var(--font-size-sm);
+}
+
+.icon_lg {
+	font-size: var(--font-size-lg);
+}
+
 /* Hashtag style for projects' cards */
 .tagged {
 	font-size: var(--font-size-sm);
