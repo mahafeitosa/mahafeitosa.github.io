@@ -15,10 +15,8 @@
 	--color-grey-light: #f1f1f1;
 	--color-blue: #57a5a9;
 	--color-acai: #5F3C4F;
-	
 	/* Font Family */
 	--font-family: "Barlow", sans-serif;
-	
 	/* Font Sizes */
 	--font-size-sm: 1.5rem;
 	--font-size-md: 2rem;
@@ -26,16 +24,13 @@
 	--font-size-xl: 3rem;
 	--font-size-xxl: 3.5rem;
 	--font-size-xxxl: 6rem;
-	
 	/* Font Weight */
 	--font-thin: 100;
 	--font-regular: 400;
 	--font-semi-bold: 600;
-	
 	/* Line Heights */
 	--line-height-sm: 1.25;
 	--line-height-md: 1.4;
-	
 	/* Letter Spacings */
 	--letter-spacing-sm: 0.05em;
 	--letter-spacing-md: 0.1em;
@@ -179,16 +174,18 @@ section {
 }
 
 .link__secondary {
+	font-weight: var(--font-regular);
 	color: var(--color-grey-dark);
 	text-decoration: underline;
-	text-decoration-color: var(--color-grey-dark);
+	text-decoration-color: transparent;
 	text-underline-offset: 0.8rem;
+	transition: 0.3s;
 }
 
 .link__secondary:hover {
 	text-decoration: underline;
 	text-decoration-color: var(--color-blue);
-	text-underline-offset: 0.8rem;
+	text-underline-offset: 0.6rem;
 }
 
 /* YouTube Responsive Embed */
