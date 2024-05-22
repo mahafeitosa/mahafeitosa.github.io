@@ -13,7 +13,7 @@
 :root {
 	/* Colours */
 	--color-body: rgba(248, 248, 248, 0.8); /* #f8f8f8 with transparency */
-	--color-body-main: #f8f8f8; /* without transparency */
+	--color-body-main: #f8f8f8; /* Without transparency */
 	--color-grey-dark: #3d3947;
 	--color-grey-medium: #e1e1e1;
 	--color-grey-light: #f1f1f1;	
@@ -305,7 +305,7 @@ section.archive {
 	border: none;
 }
 
-/* Read more / Previous-Next buttons */
+/* Read more buttons */
 .read-more {
 	margin-top: 1rem;
 	text-align: center;
@@ -325,6 +325,27 @@ section.archive {
 	border-radius: 0.5rem;
 }
 
+/* Social Media buttons */
+.social-links {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.social-links a {
+	padding: 0.5rem;
+	font-weight: var(--font-regular);
+	border: 0.2rem solid var(--color-grey-dark);
+	border-radius: 0.5rem;
+}
+
+.social-links a:hover {
+	padding: 0.5rem;
+	color: var(--color-cerulean);
+	border: 0.2rem solid var(--color-cerulean);
+	border-radius: 0.5rem;
+}
+
+/* Previous-Next buttons */
 .previous-next {
 	display: flex;
 	flex-direction: row;
@@ -471,9 +492,22 @@ label.logo a:hover {
 	
 	.image-crop {
 		width: 100%;
-		height: 55rem; /* Make image square for mobile devices */
+		height: 37rem; /* Make image square for mobile devices */
 		object-fit: cover;
 		object-position: 50% 50%;
+	}
+	
+	/* Social Media buttons */
+	.social-links {
+		margin-top: 1rem;
+		font-size: var(--font-size-sm);
+		text-align: center;
+	}
+	
+	hr {
+		max-width: 90%;
+		margin: 8rem auto;
+		border: 0.1rem solid var(--color-grey-light);
 	}
 }
 
