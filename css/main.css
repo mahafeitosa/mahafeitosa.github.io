@@ -13,6 +13,7 @@
 :root {
 	/* Colours */
 	--color-body: rgba(248, 248, 248, 0.8); /* #f8f8f8 with transparency */
+	--color-body-main: #f8f8f8; /* without transparency */
 	--color-grey-dark: #3d3947;
 	--color-grey-medium: #e1e1e1;
 	--color-grey-light: #f1f1f1;	
@@ -69,7 +70,7 @@ body {
 	font-weight: var(--font-thin);
 	line-height: var(--line-height-md);
 	color: var(--color-grey-dark);
-	background-color: var(--color-body);
+	background-color: var(--color-body-main);
 	min-height: 100vh;
 }
 
