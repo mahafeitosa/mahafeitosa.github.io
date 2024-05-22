@@ -1,115 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en">	
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<!-- ==================== Google Font ==================== -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap">
-	
-		<!-- ==================== CSS / Favicon / Boxicons ==================== -->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-		<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-	
-		<title>Mahavir Feitosa</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ==================== Favicon ==================== -->
+		<link rel="icon" type="image/x-icon" href="/img/favicons//favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+		<link rel="manifest" href="/img/favicons//site.webmanifest">
+		<!-- ==================== CSS ======================== -->
+		<link rel="stylesheet" href="/css/main.css">
+		<title>Alurinova</title>
 	</head>
-	
 	<body>
-		<!-- ==================== Header / Navigation ==================== -->
+		<!-- ==================== Header / Logo / Nav ==================== -->
 		<header>
-			<div class="brand">
-				<a href="/">Mahavir Feitosa</a>
-				<ul>
-					<li><a href="mailto:mahafeitosa@icloud.com"><i class="bx bx-envelope"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/mahavir-feitosa" target="_blank"><i class="bx bxl-linkedin-square"></i></a></li>
-					<li><a href="https://github.com/mahafeitosa" target="_blank"><i class="bx bxl-github"></i></a></li>
-					<li><a href="https://www.instagram.com/mahafeitosa" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-				</ul>
-			</div>
 			<nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="check-btn">&#9776;</label>
+				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
 				<ul>
-					<li><a href="/" class="active">About</a></li>
-					<li><a href="/projects/">Projects</a></li>
+					<li><a class="active" href="/">journal</a></li>
+					<li><a href="/archive/">archive</a></li>
+					<li><a href="/about/">about</a></li>
 				</ul>
-			</nav>				
+			</nav>
 		</header>
-		
-		<!-- ==================== Section About ==================== -->
-		<section id="about">
-			<div class="profile-photo">
-				<img src="img/profile-photo.png" alt="Profile photo">
-			</div>
-			<h1>Hello there 👋🏼</h1>
-			<p class="text__center">I am Mahavir <span>sanskrit: महावीर</span> <br>
-			A <strong>Web Designer</strong> and <strong>Frontend Developer</strong> from Brazil who spent 8 years (2013 'til 2021) living in Hamburg, Germany working in the gaming industry as a Customer Support
-			Representative and Community Manager with extra experience in CRM, Marketing Art, Social Media Management as
-			well as photography / video creation and editing.</p>
-			
-			<p class="text__center"><a href="/pdf/maha-resume.pdf" target="_blank" class="link__secondary"><i class="bx bxs-file-pdf icon_lg"></i> Download my CV</a></p>	
+		<!-- ==================== Main Wrapper ==================== -->
+		<main>
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">04 September 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/alter-do-chao-hidde-paradise-of-amazon/">Alter do Chão - hidden paradise of Amazon</a></h1>
+				
+				<img class="image-crop" src="/archive/2022/alter-do-chao-hidde-paradise-of-amazon/img/DSCF7445.jpg" alt="Alter do Chão - hidden paradise of Amazon">
+				
+				<p>The longer we stayed in the biggest city of Amazonas - Manaus, the more we felt like we needed to keep on moving. We definitely enjoyed our stay, spending time with our great friend and host Marx, visiting the city...</p>
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/alter-do-chao-hidde-paradise-of-amazon/">Read more &rsaquo;</a></p>
+			</section>
 			<hr>
 			
-			<!-- ==================== Projects / Latest ==================== -->
-			<h1>Latest Projects</h1>
-			
-			<div class="projects">
-				<!-- Card 1 - Ikiguys Blog -->
-				<div class="projects__card">
-					<a href="/projects/blog-ikiguys/" class="link__primary"><img src="projects/blog-ikiguys/img/ikiguys-home-pg.png" alt="Projects ikiguys-blog"></a>
-					
-					<p class="text__center"><a href="/projects/blog-ikiguys/" class="link__primary">Ikiguys Blog</a></p>
-					<p>Ikiguys is a travel blog I started in December 2021. The website is all hand-coded by me, using html, css and JavaScript, giving life to a clean and minimalist design.</p>
-					
-					<p class="text__center">
-						<span class="tagged">&#35;frontend</span> 
-						<span class="tagged">&#35;webdesign</span> 
-						<span class="tagged">&#35;photography</span>
-					</p>
-				</div>
-				<!-- Card 2 - Video Chicama -->
-				<div class="projects__card">
-					<a href="/projects/video-chicama/" class="link__primary"><img src="/projects/video-chicama/img/video-chicama.png" alt="Projects video-chicama"></a>
-					
-					<p class="text__center"><a href="/projects/video-chicama//" class="link__primary">Videomaking - YouTube</a></p>
-					<p>During my travels in Peru I captured a lot of video footage and turned them into short inspirational and informative videos about the places I visited. Such projects involve video capturing, video editing, voice over and uploading on YouTube.</p>
-					
-					<p class="text__center">
-						<span class="tagged">&#35;videomaking</span> 
-						<span class="tagged">&#35;youtube</span>
-					</p>
-				</div>
-				<!-- Card 3 - Goodgame Empire Interview-->
-				<div class="projects__card">
-					<a href="/projects/video-goodgame/" class="link__primary"><img src="/projects/video-goodgame/img/goodgame-video-thumb.png" alt="Projects video-goodgame"></a>
-					
-					<p class="text__center"><a href="/projects/video-goodgame/" class="link__primary" target="_blank">Videomaking - Goodgame Empire</a></p>				
-					<p class="text__center">Working as a Community Manager at <a href="https://www.goodgamestudios.com" class="link__secondary" target="_blank">Goodgame Studios</a> I took care of our games' online campaigns, both with banner design as well as video creation. In this project I used our in-game assets to create a dynamic video showcasing what the interviewee was describing.</p>
-					
-					<p class="text__center">
-						<span class="tagged">&#35;videodesign</span> 
-						<span class="tagged">&#35;soundcapture</span>
-						<span class="tagged">&#35;communitymanagement</span>
-					</p>
-				</div>
-			</div>
-			
-			<div class="more"><p>
-				<a href="/projects/" class="link__primary">See more &rarr;</a></p>
-			</div>
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">01 September 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/in-the-heart-of-the-jungle/">In the heart of the jungle</a></h1>
+				
+				<p><img class="image-crop" src="/archive/2022/in-the-heart-of-the-jungle/img/DSCF7165.jpg" alt="In the heart of the jungle"></p>
+				
+				<p>Manaus is like a bubble, huge bubble that hide the whole world inside. It is hot, noisy and bright independent organism in the middle of wild rain forest...</p>
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/in-the-heart-of-the-jungle/">Read more &rsaquo;</a></p>
+			</section>
 			<hr>
 			
-			<!-- ==================== What I Love ==================== -->
-			<h1>What I <em>love</em></h1>
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">25 July 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/the-amazon-river-nights-on-a-boat-three-borders/">The Amazon river - Nights on a boat - Three borders</a></h1>
+				
+				<img class="image-crop" src="/archive/2022/the-amazon-river-nights-on-a-boat-three-borders/img/tabatinga_7.jpg" alt="The Amazon river - Nights on a boat - Three borders">
+
+				<p>Tabatinga is the first Brazilian city that meets you on the jungle border of Peru, Brazil and Colombia. It takes your eyes with diversity: first of all, diversity of faces, intonations and smiles...</p>
+
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/the-amazon-river-nights-on-a-boat-three-borders/">Read more &rsaquo;</a></p>
+			</section>
+			<hr>
 			
-			<p class="text__center"><a href="https://youtu.be/QV0RZlCFcpQ" class="link__secondary" target="_blank">Playing guitar</a>, taking photographs, art, surfing, skating, <em>blue</em>, playing video games, açaí 😋, fujifilm, cats of all black colours.</p>
-		</section>
-		
-		<!-- ==================== To Top Button ==================== -->
-		<div class="to-top"><a href="#" class="link__primary"><i class="bx bxs-up-arrow-square"></i></a></div>
-		
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">13 July 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/the-jump-of-the-turtles-from-peru-to-brazil-by-boat/">The jump of the turtles: from Peru to Brazil by boat</a></h1>
+				
+				<img class="image-crop" src="/archive/2022/the-jump-of-the-turtles-from-peru-to-brazil-by-boat/img/boat1.jpg" alt="The jump of the turtles: from Peru to Brazil by boat">
+								
+				<p>If the plans are burning, you better turn your head to the fire and get its energy. Then go to the ocean, let the waves clean your mind and the wind make the inner strings tense again. That’s how one morning we decided to go on the journey to the Amazon’s heart...</p>
+			
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/the-jump-of-the-turtles-from-peru-to-brazil-by-boat/">Read more &rsaquo;</a></p>
+			</section>
+			<hr>
+			
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">30 June 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/mancora-a-most-pleasant-overstay/">Mancora - A most pleasant overstay</a></h1>
+				
+				<img class="image-crop" src="/archive/2022/mancora-a-most-pleasant-overstay/img/mancora_3.jpg" alt="Mancora - A most pleasant overstay">
+								
+				<p>After spending ten days filled with surf, winds, sands and tasty breakfasts with beautiful people in Chicama, we decided it was time to pack our tent and backpacks and keep on moving towards north...</p>
+			
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/mancora-a-most-pleasant-overstay/">Read more &rsaquo;</a></p>
+			</section>
+			<hr>
+			
+			<!-- Section Post Preview -->
+			<section>
+				<p class="post-date">18 May 2022</p>
+				<h1 class="post-title"><a href="/archive/2022/chicama-the-longest-wave/">Chicama - The longest wave</a></h1>
+				
+				<img class="image-crop" src="/archive/2022/chicama-the-longest-wave/img/IMG_1238.jpg" alt="Chicama - The longest wave">
+				
+				<p>Ever since we thought of visiting Peru's coast, Chicama was always on the top of our to-go places mainly due to the legendary status of <em>longest left waves in the world</em>. And that's where we headed next...</p>
+			
+				<p>&#160;</p>
+				<p class="read-more"><a href="/archive/2022/chicama-the-longest-wave/">Read more &rsaquo;</a></p>
+			</section>
+			<hr>
+			<p class="read-more"><a href="/archive/">More Posts</a></p>
+		</main>
 		<!-- ==================== Footer ==================== -->
-		<footer><p>Hand-coded with <i class="bx bx-heart"></i> by Maha</p></footer>
-	</body>
+		<footer>From the &#9829;</footer>
+	</body>	
 </html>
