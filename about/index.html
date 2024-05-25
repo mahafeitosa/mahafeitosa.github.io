@@ -1,55 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / About</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a class="active" href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a class="active" href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section About -->
-			<section>
+			<section>				
+				<div class="profile-photo">
+					<p><img src="/img/profile-photo.png" alt="Profile photo"></p>
+				</div>
+				
 				<h1>Hello there 👋🏼</h1>
 				
-				<div class="profile-photo"><img src="/img/profile-photo.png" alt="Profile photo"></div>
+				<p>I am <strong>Mahavir</strong> <small lang="hi">Hindi: महावीर</small>, and Alurinova is my little corner in the world of ones and zeros where I explore my artistic expressions. Be it in the form of photography, video-making, all things music or writing.</p>
 				
-				<p>I am <strong>Mahavir</strong> <span class="text-small" lang="hi">Hindi: महावीर</span>, and Alurinova is my little corner in the world of ones and zeros where I express my artistic interests. Welcome.</p>
+				<p>I love Traveling and writing about my adventures here. <a class="link-underline" href="https://500px.com/p/mahafeitosa" target="_blank">Photography</a>, playing guitar and other few instruments, and occasionally posting videos on my channel.</p>
 				
-				<p>I love Traveling and writing about my adventures here. <a class="post-text" href="https://500px.com/p/mahafeitosa"  target="_blank">Photography</a>, playing guitar and other few instruments, and occasionally posting videos on my channel.</p>
-
-				<hr>				
-				<p class="social-links">
-					<a href="https://500px.com/p/mahafeitosa" target="_blank">500px</a>
-					&#160; <a href="https://www.youtube.com/@mahafeitosa" target="_blank">YouTube</a>
-					&#160; <a href="https://open.spotify.com/user/mahafeitosa" target="_blank">Spotify</a>
-					<!-- &#160; <a href="https://soundcloud.com/mahafeitosa" target="_blank">Soundcloud</a> -->
-					&#160; <a href="https://www.instagram.com/mahafeitosa/" target="_blank">Instagram</a>
-					<!-- &#160; <a href="https://letterboxd.com/Aliendroid/" target="_blank">Letterboxd</a> -->
+				<p class="social-buttons">
+					<a class="btn" href="https://500px.com/p/mahafeitosa" target="_blank">500px</a>
+					<a class="btn" href="https://www.instagram.com/mahafeitosa/" target="_blank">Instagram</a>
+					<a class="btn" href="https://open.spotify.com/user/mahafeitosa" target="_blank">Spotify</a>
+					<a class="btn" href="https://www.youtube.com/@mahafeitosa" target="_blank">YouTube</a>
 				</p>
 				
-				<p>&#160;</p>
-				<h1><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#0289a1', 'K3K311M34');kofiwidget2.draw();</script></h1>
+				<div class="align-center"><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#0289a1', 'K3K311M34');kofiwidget2.draw();</script></div>
 			</section>
-			<hr>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>

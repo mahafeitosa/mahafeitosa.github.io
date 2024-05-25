@@ -1,35 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / We float through the market</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a class="active" href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a class="active" href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Post -->
 			<section>
 				<p class="post-date">22 December 2021</p>
 				<h1 class="post-title">We float through the market</h1>
 				
-				<p class="text-small">Written by Dina</p>
+				<p><small>Written by Dina</small></p>
 				
 				<p><span lang="ru">Плывем по рынку. Асфальт хрустит под солнцем, тела плачут потом. Мы улыбаемся и шепчем:</span></p>
 				
@@ -43,15 +56,20 @@
 				
 				<p>We float through the market. The asphalt crunches in the sun, bodies weeping with sweat. We smile and whisper:</p> 
 				
-				<p>"Thank you, Mystery, for the fertility of your womb. For the boundless fantasy of fate and knotty intertwining. For the plasticity of forms, for the uniqueness of each pair of eyes." </p>
-					
+				<p>"Thank you, Mystery, for the fertility of your womb. For the boundless fantasy of fate and knotty intertwining. For the plasticity of forms, for the uniqueness of each pair of eyes."</p>
+				
 				<p>"There is as much God in a tangerine bone as there is in me" - we think. And each fate suddenly turns out to be a well-trodden path, and out of the contrasts is born unconditional love, kindness, acceptance and peace.</p>
 			</section>
 			<hr>
 			<!-- Previous Next button -->
-			<div class="previous-next"><a href="#">&larr; Previous post</a><a href="#">Next post &rarr;</a></div>
+			<div class="previous-next">
+				<a class="btn" href="/archive/2014/playlist-of-september/">&larr; Previous post</a>
+				<a class="btn" href="/archive/2021/meditative-moment/">Next post &rarr;</a>
+			</div>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>

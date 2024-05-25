@@ -1,28 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / Archive</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a href="/">journal</a></li>
-					<li><a class="active" href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a href="/">Journal</a></li>
+					<li><a class="active" href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Archive -->
 			<section class="archive">
@@ -37,102 +50,104 @@
 				</ul>
 				-->
 				<h3 class="header-line"><span>2022</span></h3>
-				<ol>
+				<ul>
 					<li><strong>September</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/alter-do-chao-hidde-paradise-of-amazon/">Alter do Chão - hidden paradise of Amazon</a></li>
-					<li>&rsaquo; <a href="/archive/2022/in-the-heart-of-the-jungle/">In the heart of the jungle</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/alter-do-chao-hidde-paradise-of-amazon/">Alter do Chão - hidden paradise of Amazon</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/in-the-heart-of-the-jungle/">In the heart of the jungle</a></li>
 					<li><strong>July</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/the-amazon-river-nights-on-a-boat-three-borders/">The Amazon river - Nights on a boat - Three borders</a></li>
-					<li>&rsaquo; <a href="/archive/2022/the-jump-of-the-turtles-from-peru-to-brazil-by-boat/">The jump of the turtles: from Peru to Brazil by boat</a></li>					
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/the-amazon-river-nights-on-a-boat-three-borders/">The Amazon river - Nights on a boat - Three borders</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/the-jump-of-the-turtles-from-peru-to-brazil-by-boat/">The jump of the turtles: from Peru to Brazil by boat</a></li>					
 					<li><strong>June</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/mancora-a-most-pleasant-overstay/">Mancora - A most pleasant overstay</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/mancora-a-most-pleasant-overstay/">Mancora - A most pleasant overstay</a></li>
 					<li><strong>May</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/chicama-the-longest-wave/">Chicama - The longest wave</a></li>
-					<li>&rsaquo; <a href="/archive/2022/huanchaco-sleepy-surf-town/">Huanchaco - Sleepy surf town</a></li>
-					<li>&rsaquo; <a href="/archive/2022/lima-an-unexpected-surprise/">Lima - An unexpected surprise</a></li>
-					<li>&rsaquo; <a href="/archive/2022/of-a-long-road-from-mountains-to-desert-coast/">Of a long road from mountains to desert coast</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/chicama-the-longest-wave/">Chicama - The longest wave</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/huanchaco-sleepy-surf-town/">Huanchaco - Sleepy surf town</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/lima-an-unexpected-surprise/">Lima - An unexpected surprise</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/of-a-long-road-from-mountains-to-desert-coast/">Of a long road from mountains to desert coast</a></li>
 					<li><strong>April</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/kinsa-cocha-unknown-planet/">Kinsa Cocha unknown planet</a></li>
-					<li>&rsaquo; <a href="/archive/2022/to-the-waterfalls-of-lamay/">To the waterfalls of Lamay</a></li>
-					<li>&rsaquo; <a href="/archive/2022/lares-hot-springs/">Lares Hot Springs</a></li>
-					<li>&rsaquo; <a href="/archive/2022/of-ups-and-downs/">Of ups and downs</a></li>
-					<li>&rsaquo; <a href="/archive/2022/the-lord-of-the-dance/">The lord of the dance</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/kinsa-cocha-unknown-planet/">Kinsa Cocha unknown planet</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/to-the-waterfalls-of-lamay/">To the waterfalls of Lamay</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/lares-hot-springs/">Lares Hot Springs</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/of-ups-and-downs/">Of ups and downs</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/the-lord-of-the-dance/">The lord of the dance</a></li>
 					<li><strong>March</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/above-the-head-and-beyond-the-sky/">Above the head and beyond the sky</a></li>
-					<li>&rsaquo; <a href="/archive/2022/of-hikes-and-mountains-ventanayoc/">Of hikes and mountains - Ventanayoc</a></li>
-					<li>&rsaquo; <a href="/archive/2022/a-week-of-firsts/">A week of firsts</a></li>
-					<li>&rsaquo; <a href="/archive/2022/even-if-and-especially-when/">Even if and especially when</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/above-the-head-and-beyond-the-sky/">Above the head and beyond the sky</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/of-hikes-and-mountains-ventanayoc/">Of hikes and mountains - Ventanayoc</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/a-week-of-firsts/">A week of firsts</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/even-if-and-especially-when/">Even if and especially when</a></li>
 					<li><strong>January</strong></li>
-					<li>&rsaquo; <a href="/archive/2022/the-world-is-alive-and-so-it-is-not-perfect/">The world is alive and so it is not perfect</a></li>
-				</ol>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2022/the-world-is-alive-and-so-it-is-not-perfect/">The world is alive and so it is not perfect</a></li>
+				</ul>
 				<p>&#160;</p>
 				<h3 class="header-line"><span>2021</span></h3>
-				<ol>
+				<ul>
 					<li><strong>December</strong></li>
-					<li>&rsaquo; <a href="/archive/2021/under-the-sun/">Under the sun</a></li>
-					<li>&rsaquo; <a href="/archive/2021/meditative-moment/">Meditative moment</a></li>
-					<li>&rsaquo; <a href="/archive/2021/we-float-through-the-market/">We float through the market</a></li>
-				</ol>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2021/under-the-sun/">Under the sun</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2021/meditative-moment/">Meditative moment</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2021/we-float-through-the-market/">We float through the market</a></li>
+				</ul>
 				<p>&#160;</p>
 				<h3 class="header-line"><span>2014</span></h3>	
-				<ol>
+				<ul>
 					<li><strong>September</strong></li>
-					<li>&rsaquo; <a href="/archive/2014/09/30/playlist-of-september/">Playlist of September</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2014/playlist-of-september/">Playlist of September</a></li>
 					<li><strong>August</strong></li>
-					<li>&rsaquo; <a href="/archive/2014/08/15/a-trip-to-scandinavia/">A trip to Scandinavia</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2014/a-trip-to-scandinavia/">A trip to Scandinavia</a></li>
 					<li><strong>July</strong></li>
-					<li>&rsaquo; <a href="/archive/2014/07/12/the-new-guitar/">The new guitar</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2014/the-new-guitar/">The new guitar</a></li>
 					<li><strong>May</strong></li>
-					<li>&rsaquo; <a href="/archive/2014/05/02/visiting-the-west-jutland/">Visiting the west Jutland</a></li>
-				</ol>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2014/visiting-the-west-jutland/">Visiting the west Jutland</a></li>
+				</ul>
 				<p>&#160;</p>
 				<h3 class="header-line"><span>2013</span></h3>	
-				<ol>
+				<ul>
 					<li><strong>August</strong></li>		
-					<li>&rsaquo; <a href="/archive/2013/08/31/ms-dockville-2013/">MS Dockville 2013</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2013/ms-dockville-2013/">MS Dockville 2013</a></li>
 				</ul>
 				<p>&#160;</p>
 				<h3 class="header-line"><span>2012</span></h3>
-				<ol>
+				<ul>
 					<li><strong>December</strong></li>		
-					<li>&rsaquo; <a href="/archive/2012/12/27/favourite-albums-of-2012/">Favourite albums of 2012</a></li>	
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/favourite-albums-of-2012/">Favourite albums of 2012</a></li>	
 					<li><strong>October</strong></li>		
-					<li>&rsaquo; <a href="/archive/2012/10/12/of-a-weekend-in-berlin/">Of a weekend in Berlin</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/of-a-weekend-in-berlin/">Of a weekend in Berlin</a></li>
 					<li><strong>September</strong></li>
-					<li>&rsaquo; <a href="/archive/2012/09/14/of-a-first-jet-lagged-week-in-german-lands/">Of a first jet-lagged week in German lands</a></li>
-					<li>&rsaquo; <a href="/archive/2012/09/06/of-39-hours-travelling/">Of 39 hours travelling</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/of-a-first-jet-lagged-week-in-german-lands/">Of a first jet-lagged week in German lands</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/of-39-hours-travelling/">Of 39 hours travelling</a></li>
 					<li><strong>August</strong></li>		
-					<li>&rsaquo; <a href="/archive/2012/08/21/of-sundays-and-mondays/">Of Sundays &amp; Mondays</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/of-sundays-and-mondays/">Of Sundays &amp; Mondays</a></li>
 					<li><strong>May</strong></li>
-					<li>&rsaquo; <a href="/archive/2012/05/31/playlist-of-may/">Playlist of May</a></li>
-					<li>&rsaquo; <a href="/archive/2012/05/11/rhizophora/">Rhizophora</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/playlist-of-may/">Playlist of May</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/rhizophora/">Rhizophora</a></li>
 					<li><strong>April</strong></li>	
-					<li>&rsaquo; <a href="/archive/2012/04/30/playlist-of-april/">Playlist of April</a></li>
-					<li>&rsaquo; <a href="/archive/2012/04/23/grayscale-sao-paulo/">Grayscale S&atilde;o Paulo</a></li>
-					<li>&rsaquo; <a href="/archive/2012/04/08/stam1na-nocebo/">Stam1na &ndash; Nocebo</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/playlist-of-april/">Playlist of April</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/grayscale-sao-paulo/">Grayscale S&atilde;o Paulo</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/stam1na-nocebo/">Stam1na &ndash; Nocebo</a></li>
 					<li><strong>March</strong></li>		
-					<li>&rsaquo; <a href="/archive/2012/03/31/playlist-of-march/">Playlist of March</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/playlist-of-march/">Playlist of March</a></li>
 					<li><strong>January</strong></li>		
-					<li>&rsaquo; <a href="/archive/2012/01/23/i-used-to-be-an-adventurer-like-you/">I used to be an adventurer like you...</a></li>
-				</ol>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2012/i-used-to-be-an-adventurer-like-you/">I used to be an adventurer like you...</a></li>
+				</ul>
 				<p>&#160;</p>
 				<h3 class="header-line"><span>2011</span></h3>
-				<ol>
+				<ul>
 					<li><strong>December</strong></li>		
-					<li>&rsaquo; <a href="/archive/2011/12/28/thoughtful-khajiit/">Thoughtful Khajiit</a></li>
-					<li>&rsaquo; <a href="/archive/2011/12/20/a-framed-situation/">A framed situation</a></li>
-					<li>&rsaquo; <a href="/archive/2011/12/19/first-week-of-skyrim/">First week of Skyrim</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/thoughtful-khajiit/">Thoughtful Khajiit</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/a-framed-situation/">A framed situation</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/first-week-of-skyrim/">First week of Skyrim</a></li>
 					<li><strong>October</strong></li>		
-					<li>&rsaquo; <a href="/archive/2011/10/06/skyrim-countdown/">Skyrim countdown</a></li>
-					<li>&rsaquo; <a href="/archive/2011/10/02/oblivion-landscape/">Oblivion landscape</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/skyrim-countdown/">Skyrim countdown</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/oblivion-landscape/">Oblivion landscape</a></li>
 					<li><strong>September</strong></li>		
-					<li>&rsaquo; <a href="/archive/2011/09/21/oblivion-crisis/">Oblivion Crisis</a></li>
-					<li>&rsaquo; <a href="/archive/2011/09/18/the-a-kid/">The A Kid</a></li>
-				</ol>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/oblivion-crisis/">Oblivion Crisis</a></li>
+					<li>&rsaquo; <a class="link-underline" href="/archive/2011/the-a-kid/">The A Kid</a></li>
+				</ul>
 			</section>
 			<hr>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>
