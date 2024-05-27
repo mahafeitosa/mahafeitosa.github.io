@@ -1,28 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / Of hikes and mountains - Ventanayoc</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a class="active" href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a class="active" href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Post -->
 			<section>
@@ -31,11 +44,11 @@
 				
 				<p><img src="/archive/2022/of-hikes-and-mountains-ventanayoc/img/DSCF2953.JPG" alt="Ventanayoc Hike"></p>
 				
-				<p>As our eyes opened this morning, the view outside of the window was the usual breathtaking layering of mountains but this time with a light blue coloured sky serving as the background. The first words uttered then, before any <em>good morning</em>, were "Let’s go for a hike".</p>
+				<p>As our eyes opened this morning, the view outside of the window was the usual breathtaking layering of mountains but this time with a light blue coloured sky serving as the background. The first words uttered then before any <em>good morning</em>, were "Let’s go for a hike".</p>
 				
 				<p>The idea of doing this hike was already in our minds for the last couple of days and with such beautiful weather conditions outside, this was definitely the perfect day for it.</p>
 				
-				<p>The <a class="post-text" href="https://www.mindat.org/feature-6391974.html" target="_blank">Cerro Ventanayoc</a> is one of the first mountains we see when we open our eyes every morning. Sometimes surrounded by passing clouds up high, sometimes showing all its vegetation and patches of forests. Before start we didn’t know a whole lot about the hike itself besides the average length and that it was a moderate level hike.</p>
+				<p>The <a class="link-underline" href="https://www.mindat.org/feature-6391974.html" target="_blank">Cerro Ventanayoc</a> is one of the first mountains we see when we open our eyes every morning. Sometimes surrounded by passing clouds up high, sometimes showing all its vegetation and patches of forests. Before start we didn’t know a whole lot about the hike itself besides the average length and that it was a moderate level hike.</p>
 				
 				<p>After enjoying a tasty breakfast of local bread, omelette, fruits and coffee, we made ourselves ready and, from our front door, we started our hike at 9:30 in the morning.</p>
 				
@@ -45,7 +58,7 @@
 				<p><img src="/archive/2022/of-hikes-and-mountains-ventanayoc/img/DSCF2967.JPG" alt="Ventanayoc Hike"></p>
 				<p><img src="/archive/2022/of-hikes-and-mountains-ventanayoc/img/DSCF2986.JPG" alt="Ventanayoc Hike"></p>
 				
-				<p>By now the sky was a bit cloudy which helped against the heat and allowed some fresh air to help as the altitude started to hit us. We passed by dry lands, small patches of forests, burnt forests, rocky paths and narrow streams of water until we realised we were not using the "usual" trail. Still, this trail lead us to an amazing vantage point facing our village, the sacred valley and the <a class="post-text" href="https://en.wikipedia.org/wiki/Urubamba_River" target="_blank">Urubamba river</a> where we made camp for the next couple of hours.</p>
+				<p>By now the sky was a bit cloudy which helped against the heat and allowed some fresh air to help as the altitude started to hit us. We passed by dry lands, small patches of forests, burnt forests, rocky paths and narrow streams of water until we realised we were not using the "usual" trail. Still, this trail lead us to an amazing vantage point facing our village, the sacred valley and the <a class="link-underline" href="https://en.wikipedia.org/wiki/Urubamba_River" target="_blank">Urubamba river</a> where we made camp for the next couple of hours.</p>
 				
 				<p><img src="/archive/2022/of-hikes-and-mountains-ventanayoc/img/DSCF2993.JPG" alt="Ventanayoc Hike"></p>
 				<p><img src="/archive/2022/of-hikes-and-mountains-ventanayoc/img/DSCF2998.JPG" alt="Ventanayoc Hike"></p>
@@ -66,9 +79,14 @@
 			</section>
 			<hr>
 			<!-- Previous Next button -->
-			<div class="previous-next"><a href="#">&larr; Previous post</a><a href="#">Next post &rarr;</a></div>
+			<div class="previous-next">
+				<a class="btn" href="/archive/2022/a-week-of-firsts/">&larr; Previous post</a>
+				<a class="btn" href="/archive/2022/above-the-head-and-beyond-the-sky/">Next post &rarr;</a>
+			</div>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>

@@ -1,41 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / The lord of the dance</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a class="active" href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a class="active" href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Post -->
 			<section>
 				<p class="post-date">05 April 2022</p>
 				<h1 class="post-title">The lord of the dance</h1>
 				
-				<p class="text-small">Written by Dasha</p>
+				<p><small>Written by Dasha</small></p>
 				
 				<p><img src="/archive/2022/the-lord-of-the-dance/img/DSCF3512.jpg" alt="The lord of the dance hike"></p>
 				
 				<p>The evening before the hike was whispering with totally different plans. We were about to meet some of our friends and climb to the ruins from the side of the small river, that could hide our steps from the security guys - tickets for tourists are crazy expensive! But morning probably didn't like the taste of our sweet story and spat out all our plans, sending us to the best freestyle journey.  So, after the good market's breakfast we decided to climb the Lord of the Dance, that in our minds is proudly called <em>Mordor</em>.</p>
 				
-				<p>To find the trail we went to the small village of Huandar on the other bank of Urubamba river. Local women sipping <a class="post-text" href="https://en.wikipedia.org/wiki/Chicha" target="_blank">Chicha</a> shrugged and muttered something about <em>impossible, unknown</em>, quietly adding <em>in sandals</em>, but one of them pointed in the sand road that was going up through the village and told us to follow it before we will appear on the trail. It was the right direction.</p>
+				<p>To find the trail we went to the small village of Huandar on the other bank of Urubamba river. Local women sipping <a class="link-underline" href="https://en.wikipedia.org/wiki/Chicha" target="_blank">Chicha</a> shrugged and muttered something about <em>impossible, unknown</em>, quietly adding <em>in sandals</em>, but one of them pointed in the sand road that was going up through the village and told us to follow it before we will appear on the trail. It was the right direction.</p>
 				
 				<p>All our way literally can illustrate the sacred trinity of Inkas: snake, puma and condor.</p>
 				
@@ -97,9 +110,14 @@
 			</section>
 			<hr>
 			<!-- Previous Next button -->
-			<div class="previous-next"><a href="#">&larr; Previous post</a><a href="#">Next post &rarr;</a></div>
+			<div class="previous-next">
+				<a class="btn" href="/archive/2022/above-the-head-and-beyond-the-sky/">&larr; Previous post</a>
+				<a class="btn" href="/archive/2022/of-ups-and-downs/">Next post &rarr;</a>
+			</div>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>

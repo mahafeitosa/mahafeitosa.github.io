@@ -1,28 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / Chicama - The longest wave</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a class="active" href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a class="active" href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Post -->
 			<section>
@@ -45,7 +58,7 @@
 				
 				<h3>The town and the people</h3>
 				
-				<p>Chicama is a very small town by the coast. As told by a local, it is also known as Puerto Malabrigo or Puerto Chicama. The actual town (pueblo) of Chicama is further back and more in land. Puerto Malabrigo offers a dozen or so streets in a chess board style, having the main promenade street quite well maintained with nice spots with trees and seats overlooking the ocean. One street behind is where one can find most of the <a class="post-text" href="https://en.wikipedia.org/wiki/Ceviche" target="_blank">Ceviche</a> restaurants, grocery shops and the local market and one street more is where the colectivo terminal is located. As most coastal towns we've been in, the locals have a quite chilled way of living and always seemed happy to see us, foreigners, trying our <em>portunhol</em> abilities while haggling prices on the local market.</p>
+				<p>Chicama is a very small town by the coast. As told by a local, it is also known as Puerto Malabrigo or Puerto Chicama. The actual town (pueblo) of Chicama is further back and more in land. Puerto Malabrigo offers a dozen or so streets in a chess board style, having the main promenade street quite well maintained with nice spots with trees and seats overlooking the ocean. One street behind is where one can find most of the <a class="link-underline" href="https://en.wikipedia.org/wiki/Ceviche" target="_blank">Ceviche</a> restaurants, grocery shops and the local market and one street more is where the colectivo terminal is located. As most coastal towns we've been in, the locals have a quite chilled way of living and always seemed happy to see us, foreigners, trying our <em>portunhol</em> abilities while haggling prices on the local market.</p>
 				
 				<p>The city lays on top of a tall cliff with its back to a vast desert populated with mountains and dunes while the front greets you with the Pacific Ocean. From the promenade it is possible to have a 180° view of the coast, starting from the right, with the long pier and all its fishing boats dancing slowly with the rhythm of the sea, passing by a long stretch of beach all the way to the left, where the mythical long waves come from.</p>
 				
@@ -77,7 +90,7 @@
 				
 				<h3>Surf rental</h3>
 				
-				<p>Walking by the promenade you will find opportunities for surf board rentals and while all of the ones we passed by were filled with different kinds of boards and nice people greeting us, the one that caught our attention was the <a href="https://www.instagram.com/malabrigo_left/" target="_blank">Malabrigo Left</a> shop, owned by Jesus a.k.a. <em>El Zorro</em>, one of the nicest guys we met so far in our travels. El Zorro is a Chicama local who has been surfing this beach for a long time and for the last 10 or so years have been running his shop renting surfboards and wetsuits. He is also a talented photographer / videographer and offer such services for groups of people who would like to have their surf documented.</p>
+				<p>Walking by the promenade you will find opportunities for surf board rentals and while all of the ones we passed by were filled with different kinds of boards and nice people greeting us, the one that caught our attention was the <a class="link-underline" href="https://www.instagram.com/malabrigo_left/" target="_blank">Malabrigo Left</a> shop, owned by Jesus a.k.a. <em>El Zorro</em>, one of the nicest guys we met so far in our travels. El Zorro is a Chicama local who has been surfing this beach for a long time and for the last 10 or so years have been running his shop renting surfboards and wetsuits. He is also a talented photographer / videographer and offer such services for groups of people who would like to have their surf documented.</p>
 				
 				<p>After our first conversations with him, very good energies were felt from both sides and from that point on we knew where we would be renting our gear for the Chicama sessions. Always with a big sun tanned smile on his face he is eager to talk, give tips about the surf points, about board shapes and sizes as well as places in town for tasty local food in affordable prices.</p>
 				
@@ -106,9 +119,14 @@
 			</section>
 			<hr>
 			<!-- Previous Next button -->
-			<div class="previous-next"><a href="#">&larr; Previous post</a><a href="#">Next post &rarr;</a></div>
+			<div class="previous-next">
+				<a class="btn" href="/archive/2022/huanchaco-sleepy-surf-town/">&larr; Previous post</a>
+				<a class="btn" href="/archive/2022/mancora-a-most-pleasant-overstay/">Next post &rarr;</a>
+			</div>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>

@@ -1,39 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- ==================== CSS / Favicon ==================== -->
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 		<title>Alurinova / Lima - An unexpected surprise</title>
+		<meta name="description" content="Alurinova – A description about this website">
+		<meta name="author" content="Mahavir Feitosa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- ––––––––––––––––––– CSS ––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- ––––––––––––––––––– Favicon ––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
 	</head>
+	
 	<body>
-		<!-- ==================== Header / Logo / Nav ==================== -->
+		<!-- ––––––––––––––––––– Header / Logo / Nav ––––––––––––––––––– -->
 		<header>
+			<div class="logo">
+				<a href="/">
+					<img class="logo-mobile" src="/img/alurinova-logo-small.png" alt="Alurinova logo">
+					<img class="logo-desktop" src="/img/alurinova-logo.png" alt="Alurinova logo">
+				</a>
+			</div>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="burger">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</label>
 			<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="check-btn">&#9776;</label>
-				<label class="logo"><a href="/"><img src="/img/alurinova-logo.png" alt="Alurinova logo"></a></label>
-				<ul>
-					<li><a class="active" href="/">journal</a></li>
-					<li><a href="/archive/">archive</a></li>
-					<li><a href="/about/">about</a></li>
+				<ul class="nav-links">
+					<li><a class="active" href="/">Journal</a></li>
+					<li><a href="/archive/">Archive</a></li>
+					<li><a href="/about/">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- ==================== Main Wrapper ==================== -->
+		<!-- ––––––––––––––––––– Main Wrapper ––––––––––––––––––– -->
 		<main>
 			<!-- Section Post -->
 			<section>
 				<p class="post-date">04 May 2022</p>
 				<h1 class="post-title">Lima - An unexpected surprise</h1>
 				
-				<p class="text-small">Written by Dasha</p>
+				<p><small>Written by Dasha</small></p>
 				
 				<p>For us, Lima was a dusty horizon, described mostly by outdated guides from 2017. They all, like many of our friends who are hardened mountain tourist now, advised us to avoid Lima. However, some sincerely admired the huge city and told us where to stay and what to see. Now, after spending 3 unforgettable days in Lima, we tell you what our eyes saw, ears heard and why smiles bloomed on our faces. Let's go!</p>
 				
-				<p><a class="post-text" href="https://youtu.be/bTdKbvaiawk" target="_blank">Watch on our YouTube channel</a></p>
+				<p><a class="link-underline" href="https://youtu.be/bTdKbvaiawk" target="_blank">Watch on our YouTube channel</a></p>
 				
 				<p><img src="/archive/2022/lima-an-unexpected-surprise/img/DSCF4206.jpg" alt="Lima - A unexpected surprise"></p>
 				<p><img src="/archive/2022/lima-an-unexpected-surprise/img/DSCF4207.jpg" alt="Lima - A unexpected surprise"></p>
@@ -43,9 +56,14 @@
 			</section>
 			<hr>
 			<!-- Previous Next button -->
-			<div class="previous-next"><a href="#">&larr; Previous post</a><a href="#">Next post &rarr;</a></div>
+			<div class="previous-next">
+				<a class="btn" href="/archive/2022/of-a-long-road-from-mountains-to-desert-coast/">&larr; Previous post</a>
+				<a class="btn" href="/archive/2022/huanchaco-sleepy-surf-town/">Next post &rarr;</a>
+			</div>
 		</main>
-		<!-- ==================== Footer ==================== -->
-		<footer>from the &#9829;</footer>
+		<!-- ––––––––––––––––––– Footer ––––––––––––––––––– -->
+		<footer>
+			<small>From the <span class="color-cerulean">&#9825;</span></small>
+		</footer>
 	</body>
 </html>
