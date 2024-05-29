@@ -209,7 +209,7 @@ nav {
 		flex-direction: column;
 		width: 100%;
 		position: absolute;
-		top: 90px;
+		top: 89px;
 		left: 0;
 		background-color: var(--color-body);
 	}
@@ -249,8 +249,6 @@ footer {
 	color: var(--color-grey-dark);
 	padding: 4rem 0 1rem 0;
 }
-
-/* Misc */
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
