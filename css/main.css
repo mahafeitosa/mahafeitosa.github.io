@@ -44,12 +44,12 @@
 	--letter-spacing-sm: 0.05em;
 	--letter-spacing-md: 0.1em;
 	/* Colours */
-	--color-grey-dark: #3d3947;
+	--color-grey-dark: #383838;
 	--color-grey-medium: #e1e1e1;
 	--color-grey-light: #f1f1f1;	
 	--color-body: #f8f8f8;
 	--color-body-transp: rgba(248, 248, 248, 0.8); /* #f8f8f8 with transparency */
-	--color-cerulean: #57A5A9;
+	--color-accent: #9BD7D1; /* #57A5A9; */
 	/* Border */
 	--border: 1px solid var(--color-grey-dark);
 }
@@ -131,6 +131,11 @@ header {
 }
 
 /* Logo */
+.logo {
+	
+
+}
+
 .logo-mobile {
 	width: 5rem;
 	height: auto;
@@ -166,14 +171,14 @@ nav {
 	text-decoration: underline;
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.6rem;
-	text-decoration-color: var(--color-cerulean);
+	text-decoration-color: var(--color-accent);
 }
 
 .active {
 	text-decoration: underline;
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.6rem;
-	text-decoration-color: var(--color-cerulean);
+	text-decoration-color: var(--color-accent);
 }
 
 .menu-toggle {
@@ -238,7 +243,7 @@ main {
 
 /* Footer */
 footer {
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-md);
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--color-grey-dark);
@@ -263,7 +268,7 @@ h2 { font-size: var(--font-size-xl); }
 h3 { font-size: var(--font-size-lg); }
 
 h1 a { color: var(--color-grey-dark); text-decoration: none; }
-h1 a:hover { color: var(--color-cerulean); text-decoration: none; }
+h1 a:hover { color: var(--color-accent); text-decoration: none; }
 
 p {
 	margin: 1.5rem auto;
@@ -279,11 +284,11 @@ blockquote {
 	font-size: var(--font-size-lg);
 	font-style: italic;
 	padding: 0.5rem 0 0.5rem 2rem;
-	border-left: 0.4rem solid var(--color-cerulean);
+	border-left: 0.4rem solid var(--color-accent);
 }
 
-.color-cerulean {
-	color: var(--color-cerulean);
+.color-accent {
+	color: var(--color-accent);
 }
 
 /* Links
@@ -293,7 +298,7 @@ a {
 	text-decoration: none;
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.6rem;
-	text-decoration-color: var(--color-cerulean);
+	text-decoration-color: var(--color-accent);
 }
 
 a:hover {
@@ -307,7 +312,7 @@ a:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.6rem;
-	text-decoration-color: var(--color-cerulean);
+	text-decoration-color: var(--color-accent);
 }
 
 .link-underline:hover {
@@ -334,8 +339,8 @@ a:hover {
 
 .btn:hover {
 	text-decoration: none;
-	color: var(--color-cerulean);
-	border: 0.2rem solid var(--color-cerulean);
+	color: var(--color-accent);
+	border: 0.2rem solid var(--color-accent);
 }
 
 .btn:last-child {
@@ -396,6 +401,7 @@ a:hover {
 
 /* General align-centre utility */
 .align-center {
+	margin-top: 3rem;
 	text-align: center;
 }
 
@@ -459,7 +465,7 @@ hr {
 	
 	.logo-desktop {
 		display: block;
-		width: 20rem;
+		width: 24rem;
 		height: auto;
 	}
 	
